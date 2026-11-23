@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08D72A8766ED828F01567BB0 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED3A98D49E49E7A7DF3552 /* AuthView.swift */; };
+		0E772DA1DC4660485A1DBF58 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93055BE7448CE3AEF40463 /* Repository.swift */; };
+		0FF8BFF9AA64DD97A6436BFB /* FeedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2CBC2FF92F1B6DFC3EE96E /* FeedViews.swift */; };
+		1FDA0EDB94AA3CB2D7A2A7EA /* MeetsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAB61DC3C43841134B5A09C /* MeetsViews.swift */; };
+		28EA4EAE2A379803310A7EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF00613BE4E48B32A1A2AEE /* Assets.xcassets */; };
+		2A00A8D17EEFF8EBEFC924A4 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD84B90A6192D56EA9FC770 /* Validators.swift */; };
+		331123999F5FDF131A71607D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = C1F57F5FD36981D23A4106EB /* Supabase */; };
+		33D875696CB615B8FAD725E2 /* ReportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0955AEA8150AB366EC81C83 /* ReportSheet.swift */; };
+		37FB261B54F046446B7D947E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9F69A71676411E82418E9 /* AppModel.swift */; };
+		37FF001189400DD74DE598D5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243BCECAF0C2FCAC75F5D18 /* Models.swift */; };
+		3F0244FC910DC018E87B55A1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AE9098DC0E66750B65B25998 /* PrivacyInfo.xcprivacy */; };
+		4311B158B994F3838B9FE82F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B63BC4AB20CA901C10AD7 /* AppConfig.swift */; };
+		47D720335C4AF8EA459162E7 /* NightshiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178207CA21D514062E544C09 /* NightshiftTests.swift */; };
+		544A13EA887C7F6F76A174A9 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A2B15366BDA26A4FDB4742 /* LocationService.swift */; };
+		5FA91FB2582DF4DEF0AC94AA /* SupabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A12C7369FE484A69245CE /* SupabaseRepository.swift */; };
+		7BA67D3FC23B82F7950260F1 /* GarageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A7D2720F457E5DA81DF14 /* GarageViews.swift */; };
+		8559AE1E2D506C22624400B8 /* ProfileViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B18F319E3C178B6812A05 /* ProfileViews.swift */; };
+		906E1BDE7BC59E9D132021AA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA55F4312F0B9F31B3F5B6 /* Theme.swift */; };
+		9133A780A323B0D687F50BD4 /* NightshiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0679C5191C0C81615D9FA0 /* NightshiftUITests.swift */; };
+		9B31E3F92B1AB32CE24F1D5D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A15F03BA60A9B31DA0E286A /* OnboardingView.swift */; };
+		9EB65B9CC4071435920CE98A /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48ADDEBDDE9C8FBBFE8EFB3 /* MapScreen.swift */; };
+		A5C613414B5BA6FC77A682EA /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B4649FF149BCB5937A794 /* AppleSignIn.swift */; };
+		ABFB4FEC6419DA3BD3EAC9A3 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192082F157E2DF537B2D0BE2 /* RootView.swift */; };
+		B1346E159B5DEE4947F10AF7 /* NightshiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C2846FC4B2E3F34EBB7B8 /* NightshiftApp.swift */; };
+		B776EA168CBF8CC60C605BB0 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3EA2ED8B04BACE0547CFC5 /* Components.swift */; };
+		DF67677337E77DA4D6390440 /* LocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33109CF254492DB5FB642F /* LocalRepository.swift */; };
+		E80D41FA5734EDFDA4B3ED49 /* ImagePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FF84CE45155E3C094B995C /* ImagePipeline.swift */; };
+		EF6ADC58CA46525655233B32 /* SupabaseConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1D8AF89F45C1F52FF508CC3 /* SupabaseConfig.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E98CD4483542FBB57DB60825 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1251D83A8A8B387A2AC6257 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E371ADD24F8172932ED7C9DC;
+			remoteInfo = Nightshift;
+		};
+		F87E9E03B1141EE25635DEA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1251D83A8A8B387A2AC6257 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E371ADD24F8172932ED7C9DC;
+			remoteInfo = Nightshift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E1B4649FF149BCB5937A794 /* AppleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
+		0F2CBC2FF92F1B6DFC3EE96E /* FeedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViews.swift; sourceTree = "<group>"; };
+		178207CA21D514062E544C09 /* NightshiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightshiftTests.swift; sourceTree = "<group>"; };
+		192082F157E2DF537B2D0BE2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		2BD84B90A6192D56EA9FC770 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		31A2B15366BDA26A4FDB4742 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		3A33109CF254492DB5FB642F /* LocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepository.swift; sourceTree = "<group>"; };
+		3F0679C5191C0C81615D9FA0 /* NightshiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightshiftUITests.swift; sourceTree = "<group>"; };
+		4B1B63BC4AB20CA901C10AD7 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		4BD9F69A71676411E82418E9 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		4FED3A98D49E49E7A7DF3552 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		57FF84CE45155E3C094B995C /* ImagePipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePipeline.swift; sourceTree = "<group>"; };
+		586C2846FC4B2E3F34EBB7B8 /* NightshiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightshiftApp.swift; sourceTree = "<group>"; };
+		7B93055BE7448CE3AEF40463 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		84C94DF4BE0E02D1B2FFB650 /* Nightshift.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Nightshift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A15F03BA60A9B31DA0E286A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8CAB61DC3C43841134B5A09C /* MeetsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetsViews.swift; sourceTree = "<group>"; };
+		9CF00613BE4E48B32A1A2AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0955AEA8150AB366EC81C83 /* ReportSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportSheet.swift; sourceTree = "<group>"; };
+		AD4B8B9224390EC1D6C38932 /* NightshiftUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NightshiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9098DC0E66750B65B25998 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		B73B18F319E3C178B6812A05 /* ProfileViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViews.swift; sourceTree = "<group>"; };
+		BECA55F4312F0B9F31B3F5B6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C1D8AF89F45C1F52FF508CC3 /* SupabaseConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = SupabaseConfig.plist; sourceTree = "<group>"; };
+		C74A7D2720F457E5DA81DF14 /* GarageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageViews.swift; sourceTree = "<group>"; };
+		CB6A12C7369FE484A69245CE /* SupabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseRepository.swift; sourceTree = "<group>"; };
+		CB7CEA79DE65F7FCD21D4E63 /* NightshiftTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NightshiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3EA2ED8B04BACE0547CFC5 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		E243BCECAF0C2FCAC75F5D18 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F48ADDEBDDE9C8FBBFE8EFB3 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00BBDC8F12AA8787FFCE84B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331123999F5FDF131A71607D /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05796BA0754CAD1E1C00BB92 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				97656686563F9F51A31B8B06 /* Auth */,
+				555C1CC6E1789C636A471760 /* Feed */,
+				E231E63D2B2B96BF08086761 /* Garage */,
+				D4510E119241BE64817578AF /* Map */,
+				9390E3BDFF5F4B9C93376919 /* Meets */,
+				FFC115761C025B3B4BCACA0F /* Onboarding */,
+				CF0ECDB748F017E712992C63 /* Profile */,
+				FA57B7F5392A160498410307 /* Shared */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		28438E67BE211D8723F4C770 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				DB3EA2ED8B04BACE0547CFC5 /* Components.swift */,
+				BECA55F4312F0B9F31B3F5B6 /* Theme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		555C1CC6E1789C636A471760 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				0F2CBC2FF92F1B6DFC3EE96E /* FeedViews.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		774B8EE72503CE50297CE6CE /* NightshiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				178207CA21D514062E544C09 /* NightshiftTests.swift */,
+			);
+			path = NightshiftTests;
+			sourceTree = "<group>";
+		};
+		85CABEF6D74D62E33716E046 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9F69A71676411E82418E9 /* AppModel.swift */,
+				586C2846FC4B2E3F34EBB7B8 /* NightshiftApp.swift */,
+				192082F157E2DF537B2D0BE2 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9390E3BDFF5F4B9C93376919 /* Meets */ = {
+			isa = PBXGroup;
+			children = (
+				8CAB61DC3C43841134B5A09C /* MeetsViews.swift */,
+			);
+			path = Meets;
+			sourceTree = "<group>";
+		};
+		97656686563F9F51A31B8B06 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4FED3A98D49E49E7A7DF3552 /* AuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9AF8033367D317797CFE7218 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E243BCECAF0C2FCAC75F5D18 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC6BFAA7356A4948E864F865 /* NightshiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F0679C5191C0C81615D9FA0 /* NightshiftUITests.swift */,
+			);
+			path = NightshiftUITests;
+			sourceTree = "<group>";
+		};
+		C6F8D636149380B48A949AB7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4B1B63BC4AB20CA901C10AD7 /* AppConfig.swift */,
+				0E1B4649FF149BCB5937A794 /* AppleSignIn.swift */,
+				57FF84CE45155E3C094B995C /* ImagePipeline.swift */,
+				3A33109CF254492DB5FB642F /* LocalRepository.swift */,
+				31A2B15366BDA26A4FDB4742 /* LocationService.swift */,
+				7B93055BE7448CE3AEF40463 /* Repository.swift */,
+				CB6A12C7369FE484A69245CE /* SupabaseRepository.swift */,
+				2BD84B90A6192D56EA9FC770 /* Validators.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE9E89BEE8D9A32494C35FC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C94DF4BE0E02D1B2FFB650 /* Nightshift.app */,
+				CB7CEA79DE65F7FCD21D4E63 /* NightshiftTests.xctest */,
+				AD4B8B9224390EC1D6C38932 /* NightshiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF0ECDB748F017E712992C63 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B73B18F319E3C178B6812A05 /* ProfileViews.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D4510E119241BE64817578AF /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F48ADDEBDDE9C8FBBFE8EFB3 /* MapScreen.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D97F7DA4BEF43B6678BAC821 = {
+			isa = PBXGroup;
+			children = (
+				F00AAA1338016CB62140D335 /* Nightshift */,
+				774B8EE72503CE50297CE6CE /* NightshiftTests */,
+				AC6BFAA7356A4948E864F865 /* NightshiftUITests */,
+				CE9E89BEE8D9A32494C35FC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E231E63D2B2B96BF08086761 /* Garage */ = {
+			isa = PBXGroup;
+			children = (
+				C74A7D2720F457E5DA81DF14 /* GarageViews.swift */,
+			);
+			path = Garage;
+			sourceTree = "<group>";
+		};
+		F00AAA1338016CB62140D335 /* Nightshift */ = {
+			isa = PBXGroup;
+			children = (
+				85CABEF6D74D62E33716E046 /* App */,
+				28438E67BE211D8723F4C770 /* Design */,
+				05796BA0754CAD1E1C00BB92 /* Features */,
+				9AF8033367D317797CFE7218 /* Models */,
+				C6F8D636149380B48A949AB7 /* Services */,
+				9CF00613BE4E48B32A1A2AEE /* Assets.xcassets */,
+				AE9098DC0E66750B65B25998 /* PrivacyInfo.xcprivacy */,
+				C1D8AF89F45C1F52FF508CC3 /* SupabaseConfig.plist */,
+			);
+			path = Nightshift;
+			sourceTree = "<group>";
+		};
+		FA57B7F5392A160498410307 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A0955AEA8150AB366EC81C83 /* ReportSheet.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FFC115761C025B3B4BCACA0F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8A15F03BA60A9B31DA0E286A /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8C4FF59A0BDA71A14A103C8 /* NightshiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DFF2E486D260AA15A37A22 /* Build configuration list for PBXNativeTarget "NightshiftUITests" */;
+			buildPhases = (
+				1519984DBD4F3C151068940D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6857A1DF4ACDC0D4849035FB /* PBXTargetDependency */,
+			);
+			name = NightshiftUITests;
+			packageProductDependencies = (
+			);
+			productName = NightshiftUITests;
+			productReference = AD4B8B9224390EC1D6C38932 /* NightshiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C719BFDFED8A5CBB272C617E /* NightshiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10BAE872DED6F748BEB2162 /* Build configuration list for PBXNativeTarget "NightshiftTests" */;
+			buildPhases = (
+				65A673FA5680CF0EDA1E2D2C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E20BEF56B13CEC8B61BA4457 /* PBXTargetDependency */,
+			);
+			name = NightshiftTests;
+			packageProductDependencies = (
+			);
+			productName = NightshiftTests;
+			productReference = CB7CEA79DE65F7FCD21D4E63 /* NightshiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E371ADD24F8172932ED7C9DC /* Nightshift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3736C1D2D993F6175411178F /* Build configuration list for PBXNativeTarget "Nightshift" */;
+			buildPhases = (
+				4547443E0935B254088C370E /* Ensure Supabase config */,
+				FBD196FA1BDEE90B0127B183 /* Sources */,
+				6C465D9CCF157FE7B191FC28 /* Resources */,
+				00BBDC8F12AA8787FFCE84B7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nightshift;
+			packageProductDependencies = (
+				C1F57F5FD36981D23A4106EB /* Supabase */,
+			);
+			productName = Nightshift;
+			productReference = 84C94DF4BE0E02D1B2FFB650 /* Nightshift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1251D83A8A8B387A2AC6257 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A8C4FF59A0BDA71A14A103C8 = {
+						TestTargetID = E371ADD24F8172932ED7C9DC;
+					};
+					E371ADD24F8172932ED7C9DC = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 178A162F6FAB0508C90EFC6E /* Build configuration list for PBXProject "Nightshift" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D97F7DA4BEF43B6678BAC821;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4D1D10C787C4653574DABAA4 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CE9E89BEE8D9A32494C35FC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E371ADD24F8172932ED7C9DC /* Nightshift */,
+				C719BFDFED8A5CBB272C617E /* NightshiftTests */,
+				A8C4FF59A0BDA71A14A103C8 /* NightshiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C465D9CCF157FE7B191FC28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EA4EAE2A379803310A7EF7 /* Assets.xcassets in Resources */,
+				3F0244FC910DC018E87B55A1 /* PrivacyInfo.xcprivacy in Resources */,
+				EF6ADC58CA46525655233B32 /* SupabaseConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4547443E0935B254088C370E /* Ensure Supabase config */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Ensure Supabase config";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -f \"$SRCROOT/Nightshift/SupabaseConfig.plist\" ]; then\n  cp \"$SRCROOT/Nightshift/SupabaseConfig.example.plist\" \"$SRCROOT/Nightshift/SupabaseConfig.plist\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1519984DBD4F3C151068940D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9133A780A323B0D687F50BD4 /* NightshiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A673FA5680CF0EDA1E2D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D720335C4AF8EA459162E7 /* NightshiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD196FA1BDEE90B0127B183 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4311B158B994F3838B9FE82F /* AppConfig.swift in Sources */,
+				37FB261B54F046446B7D947E /* AppModel.swift in Sources */,
+				A5C613414B5BA6FC77A682EA /* AppleSignIn.swift in Sources */,
+				08D72A8766ED828F01567BB0 /* AuthView.swift in Sources */,
+				B776EA168CBF8CC60C605BB0 /* Components.swift in Sources */,
+				0FF8BFF9AA64DD97A6436BFB /* FeedViews.swift in Sources */,
+				7BA67D3FC23B82F7950260F1 /* GarageViews.swift in Sources */,
+				E80D41FA5734EDFDA4B3ED49 /* ImagePipeline.swift in Sources */,
+				DF67677337E77DA4D6390440 /* LocalRepository.swift in Sources */,
+				544A13EA887C7F6F76A174A9 /* LocationService.swift in Sources */,
+				9EB65B9CC4071435920CE98A /* MapScreen.swift in Sources */,
+				1FDA0EDB94AA3CB2D7A2A7EA /* MeetsViews.swift in Sources */,
+				37FF001189400DD74DE598D5 /* Models.swift in Sources */,
+				B1346E159B5DEE4947F10AF7 /* NightshiftApp.swift in Sources */,
+				9B31E3F92B1AB32CE24F1D5D /* OnboardingView.swift in Sources */,
+				8559AE1E2D506C22624400B8 /* ProfileViews.swift in Sources */,
+				33D875696CB615B8FAD725E2 /* ReportSheet.swift in Sources */,
+				0E772DA1DC4660485A1DBF58 /* Repository.swift in Sources */,
+				ABFB4FEC6419DA3BD3EAC9A3 /* RootView.swift in Sources */,
+				5FA91FB2582DF4DEF0AC94AA /* SupabaseRepository.swift in Sources */,
+				906E1BDE7BC59E9D132021AA /* Theme.swift in Sources */,
+				2A00A8D17EEFF8EBEFC924A4 /* Validators.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6857A1DF4ACDC0D4849035FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E371ADD24F8172932ED7C9DC /* Nightshift */;
+			targetProxy = F87E9E03B1141EE25635DEA8 /* PBXContainerItemProxy */;
+		};
+		E20BEF56B13CEC8B61BA4457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E371ADD24F8172932ED7C9DC /* Nightshift */;
+			targetProxy = E98CD4483542FBB57DB60825 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08077218B45ECB1340DD0834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Nightshift/Nightshift.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Nightshift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nightshift.app;
+				PRODUCT_NAME = Nightshift;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		22D2FFB476A5B34ADC3FC25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		29BE687FDC20A102720864D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Nightshift/Nightshift.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Nightshift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nightshift.app;
+				PRODUCT_NAME = Nightshift;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6E75090929695555913ED2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nightshift.app.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nightshift;
+			};
+			name = Debug;
+		};
+		9605969853053FCFAAFA8B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nightshift.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nightshift.app/Nightshift";
+			};
+			name = Release;
+		};
+		B53D37DD4204180A10903AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nightshift.app.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nightshift;
+			};
+			name = Release;
+		};
+		E9A03D3F5FF3235D4D8F9DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nightshift.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nightshift.app/Nightshift";
+			};
+			name = Debug;
+		};
+		FB490F3DC1F6C697D698A95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11DFF2E486D260AA15A37A22 /* Build configuration list for PBXNativeTarget "NightshiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E75090929695555913ED2E7 /* Debug */,
+				B53D37DD4204180A10903AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		178A162F6FAB0508C90EFC6E /* Build configuration list for PBXProject "Nightshift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D2FFB476A5B34ADC3FC25A /* Debug */,
+				FB490F3DC1F6C697D698A95B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3736C1D2D993F6175411178F /* Build configuration list for PBXNativeTarget "Nightshift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BE687FDC20A102720864D9 /* Debug */,
+				08077218B45ECB1340DD0834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F10BAE872DED6F748BEB2162 /* Build configuration list for PBXNativeTarget "NightshiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9A03D3F5FF3235D4D8F9DDD /* Debug */,
+				9605969853053FCFAAFA8B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D1D10C787C4653574DABAA4 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 2.55.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1F57F5FD36981D23A4106EB /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D1D10C787C4653574DABAA4 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B1251D83A8A8B387A2AC6257 /* Project object */;
+}
